@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    font-family: montserrat;
+}
+
+body {
+    background-color: #181D31;
+}
+
+
+/*------------------------------------------------------------------------ */
+
+
+nav {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px 20px 50px;
+}
+.logo-principal {
+    color: #EEEEEE;
+    text-decoration: none;
+}
+
+.menu-principal {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.boton-menu {
+    background-color: beige;
+    border-radius: 10px;
+    box-shadow: 5px 5px #678983;
+    text-align: center;
+    color: black;
+    width: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+/*------------------------------------------------------------------------ */
+
+
+header {
+    background-image: url(./imagenes/imagen_fondo_codigo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.texto-principal {
+    font-size: 60px;
+    font-weight: bold;
+    color: #EEEEEE;
+    text-align: center;
+    text-shadow: #181D31 5px 5px 3px;
+}
+
+
+/*------------------------------------------------------------------------ */
+
+
+
+H2 {
+    color: #678983;
+    font-size: 40px;
+    text-align: center;
+    margin: 50px 0px 50px 0px;
+    text-shadow: 2px 2px black;
+}
+
+
+/*------------------------------------------------------------------------ */
+
+
+.contenedor-padre {
+    padding: 0px 0px 100px 0px;
+    width: 100%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.tarjeta {
+    background-color: beige;
+    border: 5px solid #678983;
+    width: 350px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.imagen-tarjeta {
+    width: 100%;
+}
+.boton-ir {
+    background-color: #181D31;
+    border-radius: 10px;
+    box-shadow: 5px 5px #678983;
+    text-decoration: dashed;
+    text-align: center;
+    color: #EEEEEE;
+    padding: 10px;
+    margin-bottom: 30px;
+    width: 50%;
+}
+.parrafo-tarjeta {
+    text-align: center;
+}
+
+
+/*------------------------------------------------------------------------ */
+
+
+.contenedor-padre-hist {
+    padding: 0px 150px;
+}
+.contenedor-hijo-hist {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 30px;
+    margin: 100px 0px;
+}
+.parrafo-general {
+    color: #E6DDC4;
+    width: 60%;
+    font-weight:600;
+}
+
+
+/*video------------------------------------------------------------------------ */
+
+.video-historia{
+    width: 800px;
+
+
+}
+.contenedor-video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 100px 0px ;
+}
+.caja-video {
+    padding: 5px;
+    background-color: black;
+}
+.barra-controles {
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+    padding: 10px; 
+    gap: 20px;
+}
+#boton-play,#boton-pause {
+    background-color: beige;
+    border-radius: 10px;
+    border: solid #181D31;
+    box-shadow: 3px 3px #678983;
+    width: 80px;
+    height: 40px;
+}
+#tiempo-video {
+    color: #EEEEEE;
+}
+
+
+/*------------------------------------------------------------------------ */
+
+
+footer {
+    background-color: #678983;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+.logo-izquierda-pie {
+    width: 400px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.diagrama-logo-pie {
+    height: 100%;
+}
+.descriptor-logo {
+    color: #181D31;
+}
+.info-firma-pie {
+    color: #181D31;
+}
