@@ -30,7 +30,7 @@ nav {
     align-items: center;
     gap: 10px;
 }
-.boton-menu {
+.boton-menu{
     background-color: beige;
     border-radius: 10px;
     box-shadow: 5px 5px #678983;
@@ -43,8 +43,12 @@ nav {
     align-items: center;
     text-decoration: none;
 }
-
-
+.boton-menu:active{
+    transform: translate(3px, 2px);
+}
+.boton-menu:active{
+    box-shadow:0px 0px ;
+}
 /*------------------------------------------------------------------------ */
 
 
@@ -117,7 +121,12 @@ H2 {
 .parrafo-tarjeta {
     text-align: center;
 }
-
+.boton-ir:active{
+    transform: translate(3px, 2px);
+}
+.boton-ir:active{
+    box-shadow:0px 0px ;
+}
 
 /*------------------------------------------------------------------------ */
 
@@ -172,6 +181,18 @@ H2 {
     box-shadow: 3px 3px #678983;
     width: 80px;
     height: 40px;
+}
+#boton-play:active{
+    transform: translate(3px, 2px);
+}
+#boton-play:active{
+    box-shadow:0px 0px ;
+}
+#boton-pause:active{
+    transform: translate(3px, 2px);
+}
+#boton-pause:active{
+    box-shadow:0px 0px ;
 }
 #tiempo-video {
     color: #EEEEEE;
