@@ -23,7 +23,7 @@ nav {
     text-decoration: none;
 }
 
-.menu-principal {
+.contenedor-botones {
     display: flex;
     width: 300px;
     justify-content: space-between;
@@ -31,9 +31,9 @@ nav {
     gap: 10px;
 }
 .boton-menu{
-    background-color: beige;
+    background-color: #E6DDC4;
     border-radius: 10px;
-    box-shadow: 5px 5px #678983;
+    box-shadow: 3px 3px #678983;
     text-align: center;
     color: black;
     width: 120px;
@@ -110,7 +110,7 @@ H2 {
 .boton-ir {
     background-color: #181D31;
     border-radius: 10px;
-    box-shadow: 5px 5px #678983;
+    box-shadow: 3px 3px #678983;
     text-decoration: dashed;
     text-align: center;
     color: #EEEEEE;
@@ -151,9 +151,7 @@ H2 {
 /*video------------------------------------------------------------------------ */
 
 .video-historia{
-    width: 800px;
-
-
+    width: 100%;
 }
 .contenedor-video{
     display: flex;
@@ -165,6 +163,7 @@ H2 {
 .caja-video {
     padding: 5px;
     background-color: black;
+    width: 70%;
 }
 .barra-controles {
     background-color: rgb(34, 34, 34);
@@ -174,8 +173,13 @@ H2 {
     padding: 10px; 
     gap: 20px;
 }
+.botones {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
 #boton-play,#boton-pause {
-    background-color: beige;
+    background-color: #E6DDC4;
     border-radius: 10px;
     border: solid #181D31;
     box-shadow: 3px 3px #678983;
