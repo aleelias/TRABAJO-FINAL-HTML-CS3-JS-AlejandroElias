@@ -12,10 +12,18 @@
 <body>
 
 <nav>
-    <a class="logo-principal" href="./index.html"> LOGO </a>
-    <ul class="contenedor-botones">            
+    <a class="logo-principal" href="./index.html">
+        <svg width="80" height="60">
+            <rect width="60" height="35" fill="#E6DDC4" x="10" y="0" rx="5" id="mon-beige"></rect>
+            <rect width="50" height="25" fill="#495579" x="15" y="5" rx="5" id="mon-azul"></rect>
+            <rect width="10" height="5" fill="#EEEEEE" x="50" y="8" rx="3" id="brillo"></rect>
+            <polygon points="20 40, 60 40, 80 60, 0 60" fill="#E6DDC4" x="0" y="35" id="tec-beige"></polygon>
+            <polygon points="25 45, 55 45, 65 55, 15 55" fill="#495579" x="0" y="35" id="tec-azul"></polygon>
+        </svg>
+    </a>
+    <ul class="contenedor-botones">
         <a class="boton-menu" href="./historia.html"> HISTORIA </a>
-        <a class="boton-menu" href="./juego.html"> JUEGUEMOS </a>        
+        <a class="boton-menu" href="./juego.html"> JUEGUEMOS </a>
     </ul>
 </nav>
 
@@ -23,8 +31,10 @@
     <h1 class="texto-principal"> HISTORIA DE LA PROGRAMACION </h1> 
 </header>
 
+<main>
 
-<main class="contenedor-padre-hist">
+    <div class="contenedor-padre-hist">
+
         <div class="contenedor-hijo-hist"> 
             <h2> El principio de la historia <br> de la programación </h2>
             <p class="parrafo-general">El primer lenguaje de programación fue un algoritmo creado por Ada Lovelace en 1883. 
@@ -32,8 +42,8 @@
                 era calcular los números de Bernoulli. En 1936, por primera vez, los códigos informáticos fueron especializados
                 por Alonzo Church y Alan Turing. Church expresó el cálculo lambda de forma formulativa.
             </p>
-        
         </div>
+
         <div class="contenedor-hijo-hist"> 
             <p class="parrafo-general">Los primeros ordenadores modernos (alimentados eléctricamente) fueron creados en los 
                 años 40. Estas computadoras estaban limitadas en velocidad y capacidad de memoria.
@@ -45,6 +55,7 @@
             </p>
             <h2> Lenguaje de ensamblaje </h2>
         </div>
+
         <div class="contenedor-hijo-hist"> 
             <h2> Los primeros lenguajes <br> de programación </h2>
             <p class="parrafo-general">FORmulaTRANslation es el lenguaje de programación más antiguo y que continúa en uso. 
@@ -71,25 +82,26 @@
                 Esto dio el puntapie a que se sigan perfeccionando los lenguajes hasta llegar al os lenguajes de hoy en dia 
             </p>
         </div>
-</main>
+    </div>
 
-
-<article class="contenedor-video">
-    <h2> Un breve video para complementar lo visto </h2>
-    <section class="caja-video">
-        <video class="video-historia" poster="./imagenes/img-video.jpg">
-            <source src="./video/historia-Comp.mp4" type="video/mp4">
-            <source src="./video/historia-Comp.ogv" type="video/ogv">
-        </video>
-        <div class="barra-controles">
-            <div class="botones">
-                <button id="boton-play" onclick="iniciarRep()"> <img src="./imagenes/play.svg" alt=""> </button>
-                <button id="boton-pause" onclick="pausarRep()"> <img src="./imagenes/pausa.svg" alt=""> </button>
+    <article class="contenedor-video">
+        <h2> Un breve video para complementar lo visto </h2>
+        <section class="caja-video">
+            <video class="video-historia" poster="./imagenes/img-video.jpg">
+                <source src="./video/historia-Comp.mp4" type="video/mp4">
+                <source src="./video/historia-Comp.ogv" type="video/ogv">
+            </video>
+            <div class="barra-controles">
+                <div class="botones">
+                    <button id="boton-play" onclick="iniciarRep()"> <img src="./imagenes/play.svg" alt=""> </button>
+                    <button id="boton-pause" onclick="pausarRep()"> <img src="./imagenes/pausa.svg" alt=""> </button>
+                </div>
+                <div id="tiempo-video"> Duracion video : 281.10 </div>   
             </div>
-            <div id="tiempo-video"> Duracion video : 281.10 </div>   
-        </div>
-    </section>
-</article>
+        </section>
+    </article>
+
+</main>
 
 
 <footer>

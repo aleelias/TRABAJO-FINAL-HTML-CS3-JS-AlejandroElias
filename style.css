@@ -82,7 +82,7 @@ H2 {
     color: #678983;
     font-size: 40px;
     text-align: center;
-    margin: 50px 0px 50px 0px;
+    margin: 20px 0px;
     text-shadow: 2px 2px black;
 }
 
@@ -90,12 +90,15 @@ H2 {
 /*------------------------------------------------------------------------ */
 
 
-.contenedor-padre {
-    padding: 0px 0px 100px 0px;
-    width: 100%;
+main {
+    margin: 80px 0px 150px 0px;
+}
+.contenedor-padre-inicio {
     display:flex;
     justify-content: space-evenly;
     align-items: center;
+    gap: 10px;
+    padding-top: 50px;
 }
 .tarjeta {
     background-color: beige;
@@ -106,6 +109,7 @@ H2 {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
 }
 .imagen-tarjeta {
     width: 100%;
@@ -132,27 +136,36 @@ H2 {
     box-shadow:0px 0px ;
 }
 
+
 /*------------------------------------------------------------------------ */
 
 
+
 .contenedor-padre-hist {
-    padding: 0px 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
 }
 .contenedor-hijo-hist {
+    width: 70%;
     display: flex;
     justify-content:space-between;
     align-items: center;
     gap: 30px;
-    padding: 30px 0px;
+    padding: 50px 0px;
 }
 .parrafo-general {
     color: #E6DDC4;
     width: 60%;
     font-weight:600;
+    margin: 0px;
 }
 
 
+
 /*video------------------------------------------------------------------------ */
+
 
 .video-historia{
     width: 100%;
@@ -162,12 +175,12 @@ H2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px 0px 100px 0px ;
 }
 .caja-video {
     padding: 5px;
     background-color: black;
     width: 70%;
+    margin: 30px 0px;
 }
 .barra-controles {
     background-color: rgb(34, 34, 34);
@@ -205,6 +218,37 @@ H2 {
 #tiempo-video {
     color: #EEEEEE;
 }
+
+
+
+/*---JUEGO-------------------------------------------------------------- */
+
+
+
+.contenedor-cajas {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-top: 30px; 
+    padding-top: 50px;
+}
+.caja-tarjeta {
+    background-color: grey;
+    width: 275px;
+    height: 400px;
+    border: 3px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.parrafo-juego {
+    color: #E6DDC4;
+    width: 60%;
+    font-weight:600;
+    text-align: center;
+}
+
 
 
 /*------------------------------------------------------------------------ */
