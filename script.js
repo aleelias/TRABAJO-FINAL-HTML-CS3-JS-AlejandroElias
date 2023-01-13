@@ -7,4 +7,3 @@ const pausarRep=()=>{
     video.pause()
 }
 
-
