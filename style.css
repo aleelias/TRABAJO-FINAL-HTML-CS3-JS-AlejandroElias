@@ -35,10 +35,10 @@ nav {
 }
 .boton-menu{
     background-color: #E6DDC4;
+    color: black;
     border-radius: 10px;
     box-shadow: 3px 3px #678983;
     text-align: center;
-    color: black;
     width: 130px;
     height: 40px;
     display: flex;
@@ -48,10 +48,12 @@ nav {
 }
 .boton-menu:active{
     transform: translate(3px, 2px);
+    box-shadow:0px 0px;
 }
-.boton-menu:active{
-    box-shadow:0px 0px ;
-}
+
+
+
+
 /*------------------------------------------------------------------------ */
 
 
@@ -66,7 +68,7 @@ header {
     align-items: center;
 }
 .texto-principal {
-    font-size: 60px;
+    font-size: 55px;
     font-weight: bold;
     color: #EEEEEE;
     text-align: center;
@@ -131,10 +133,10 @@ main {
 }
 .boton-ir:active{
     transform: translate(3px, 2px);
+    box-shadow:0px 0px;
 }
-.boton-ir:active{
-    box-shadow:0px 0px ;
-}
+
+
 
 
 /*------------------------------------------------------------------------ */
@@ -190,7 +192,7 @@ main {
     padding: 10px; 
     gap: 20px;
 }
-.botones {
+.botonera-video {
     display: flex;
     justify-content: space-between;
     gap: 10px;
@@ -205,15 +207,11 @@ main {
 }
 #boton-play:active{
     transform: translate(3px, 2px);
-}
-#boton-play:active{
-    box-shadow:0px 0px ;
+    box-shadow:0px 0px;
 }
 #boton-pause:active{
     transform: translate(3px, 2px);
-}
-#boton-pause:active{
-    box-shadow:0px 0px ;
+    box-shadow:0px 0px;
 }
 #tiempo-video {
     color: #EEEEEE;
@@ -229,7 +227,6 @@ main {
     display: flex;
     justify-content: center;
     align-items:center;
-    margin-top: 30px; 
     padding-top: 50px;
 }
 .caja-tarjeta {
@@ -241,14 +238,40 @@ main {
     justify-content: space-around;
     align-items: center;
 }
-
+.caja-tarjeta:hover{
+    background-color: black;
+}
 .parrafo-juego {
     color: #E6DDC4;
     width: 60%;
     font-weight:600;
     text-align: center;
 }
+.contenedor-imag-cajas {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding-top: 50px;
+}
+#imag-cajas1,#imag-cajas2,#imag-cajas3 {
+    width: 275px;
+    height: 400px;
+}
 
+#boton-reiniciar {
+    background-color: #E6DDC4;
+    border-radius: 10px;
+    border: solid #181D31;
+    box-shadow: 3px 3px #678983;
+    text-align: center;
+    width: 130px;
+    height: 40px;
+    position: center;
+}
+#boton-reiniciar:active{
+    transform: translate(3px, 2px);
+    box-shadow: 0px 0px;
+}
 
 
 /*------------------------------------------------------------------------ */
