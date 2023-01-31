@@ -16,7 +16,7 @@ nav {
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px 20px 50px;
+    padding: 0px 50px 20px 50px;
 }
 .logo-principal {
     color: #EEEEEE;
@@ -24,7 +24,11 @@ nav {
 }
 
 
-/*---ANIMACION LOGO--------------------------------------------------------------------- */
+/*ANIMACION LOGO-
+Intente reducir el codigo de la animacion poniendo mover 1y2 en una sola
+con animacion delay en (copuazul) pero arranca 
+en opacidad 100% y no se genera el efecto correcto.
+*/
 
 .compubeige{
     animation-name: mover1;
@@ -120,8 +124,6 @@ nav {
 }
 
 
-
-
 /*------------------------------------------------------------------------ */
 
 
@@ -207,7 +209,7 @@ main {
 
 
 
-/*------------------------------------------------------------------------ */
+/*--HISTORIA---------------------------------------------------------------------- */
 
 
 
@@ -281,7 +283,7 @@ main {
     transform: translate(3px, 2px);
     box-shadow:0px 0px;
 }
-#tiempo-video {
+#duracion {
     color: #EEEEEE;
 }
 
@@ -300,12 +302,11 @@ main {
     display: flex;
     justify-content: center;
     align-items:center;
-    padding-top: 50px;
 }
 .caja-tarjeta {
     background-color: grey;
-    width: 275px;
-    height: 400px;
+    width: 250px;
+    height: 443px;
     border: 3px solid black;
     display: flex;
     justify-content: space-around;
@@ -316,20 +317,19 @@ main {
 }
 .parrafo-juego {
     color: #E6DDC4;
-    width: 60%;
+    font-size: 12px;
     font-weight:600;
     text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
 }
 .contenedor-imag-cajas {
     display: flex;
     justify-content: center;
     align-items:center;
     padding: 50px 0px;
-    gap: 5px;
-}
-#imag-cajas1,#imag-cajas2,#imag-cajas3 {
-    width: 275px;
-    height: 400px;
+    gap: 5px;    
 }
 
 #boton-reiniciar {

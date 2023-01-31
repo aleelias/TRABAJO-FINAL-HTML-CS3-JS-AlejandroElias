@@ -22,8 +22,8 @@
         </svg>
     </a>
     <ul class="contenedor-botones">
-        <a class="boton-menu" href="./historia.html"> HISTORIA </a>
-        <a class="boton-menu" href="./juego.html"> JUEGUEMOS </a>
+        <li><a class="boton-menu" href="./historia.html"> HISTORIA </a></li>
+        <li><a class="boton-menu" href="./juego.html"> JUEGUEMOS </a></li>
     </ul>
 </nav>
 
@@ -35,28 +35,30 @@
     <h2> Armemos el rompecabezas y veamos que imagen es... </h2>
 
     <section>
+        <div class="parrafo-juego">
+            <p> Arrastre y suelte la imágen aquí <br> ▼ </p>
+            <p> Arrastre y suelte la imágen aquí <br> ▼ </p>
+            <p> Arrastre y suelte la imágen aquí <br> ▼ </p>
+        </div>
+
         <div class="contenedor-cajas">
-            <div class="caja-tarjeta" id="caja-soltar">
-                <p class="parrafo-juego"> Arrastre y suelte <br> la imágen aquí </p>
+            <div class="caja-tarjeta" id="0" ondragover="allowDrop(event)" ondrop="drop(event)">
             </div>
-            <div class="caja-tarjeta" id="caja-soltar">
-                <p class="parrafo-juego"> Arrastre y suelte <br> la imágen aquí </p>
+            <div class="caja-tarjeta" id="0" ondragover="allowDrop(event)" ondrop="drop(event)">
             </div>
-            <div class="caja-tarjeta" id="caja-soltar">
-                <p class="parrafo-juego"> Arrastre y suelte <br> la imágen aquí </p>
+            <div class="caja-tarjeta" id="0" ondragover="allowDrop(event)" ondrop="drop(event)">
             </div>
         </div> 
         <div class="contenedor-imag-cajas">
-            <img id="imag-cajas3" src="./imagenes/Rompe3.png" alt="">
-            <img id="imag-cajas2" src="./imagenes/rompe2.png" alt="">
-            <img id="imag-cajas1" src="./imagenes/Rompe1.png" alt="">
+            <img id="juego3" src="./imagenes/Rompe3.png" alt="collage-personajes-historia3" ondragstart="drag(event)">
+            <img id="juego2" src="./imagenes/rompe2.png" alt="collage-personajes-historia2" draggable="true" ondragstart="drag(event)">
+            <img id="juego1" src="./imagenes/Rompe1.png" alt="collage-personajes-historia1" draggable="true" ondragstart="drag(event)">
         </div>
     </section>
     <div>
-        <button id="boton-reiniciar" onclick="reiniciar()"> Reiniciar </button>
-
+        <button id="boton-reiniciar" onclick="reinicio()"> Reiniciar </button>
     </div>
-</main>
+</main> 
 
 
 </body>
